@@ -1,0 +1,47 @@
+@keyframes animate--fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(.7, .7)
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animate--fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes animate--fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fade-in-element {
+  animation: animate--fadeIn 1s;
+}
+
+.fade-in-left-element {
+  animation: animate--fadeInLeft 1s;
+}
+
+.fade-in-right-element {
+  animation: animate--fadeInRight 1s;
+}
+
+.animate-hidden {
+  opacity: 0;
+}

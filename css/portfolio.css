@@ -1,0 +1,48 @@
+.portfolio-section {
+  padding: 30px 0;
+  background: #653333;
+}
+
+.portfolio-section .section-title {
+  color: #fff;
+}
+
+.slider {
+  padding: 0 30px;
+  position: relative;
+}
+
+.slider-item {
+  height: 300px;
+  position: relative;
+  outline: none;
+}
+
+.slider-item-image {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  height: 100%;
+  width: calc(100% - 10px);
+  object-fit: cover;
+}
+
+.slick-arrow {
+  position: absolute;
+  background: transparent;
+  font-size: 0;
+  top: 0;
+  bottom: 0;
+  height: 40px;
+  margin: auto;
+  outline: none;
+  width: 25px;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}

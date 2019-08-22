@@ -1,0 +1,28 @@
+.feature-section {
+  padding: 30px 0;
+  background: #eee;
+  overflow: hidden;
+}
+
+.feature-section-inner {
+  display: flex;
+  text-align: center;
+}
+
+.feature-item {
+  padding: 20px;
+  width: 33.333%;
+}
+
+.feature-item-icon {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.feature-item-heading {
+  margin-bottom: 25px;
+}
+
+.feature-description {
+  line-height: 1.7;
+}
