@@ -6,21 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta content="LIPI mājaslapa. Logu tonēšana, aplīmēšana." name="description">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/libs/slick.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>LIPI</title>
 </head>
 
 <body>
-    <header class="site-header">
+    <header class="site-header" id="site-header">
         <div class="container">
             <div class="header-inner">
                 <span class="site-header-logo">LIPI</span>
-                <nav class="site-nav">
-                    <a class="nav-item nav-item--active" href="#">
+                <button class="site-nav-toggle" id="site-nav-toggle" type="button" aria-label="Menu" aria-controls="site-nav">
+                    <div class="site-nav-toggle-box">
+                        <div class="site-nav-toggle-inner"></div>
+                    </div>
+                </button>
+                <nav class="site-nav" id="site-nav">
+                    <a class="nav-item" href="#home">
                         Sākums
-                        <span class="nav-item-line"></span>
                     </a>
                     <a class="nav-item" href="#features">
                         Stiklu tonēšana
@@ -28,10 +31,10 @@
                     <a class="nav-item" href="#portfolio">
                         Mūsu darbi
                     </a>
-                    <a class="nav-item" href="#">
+                    <a class="nav-item" href="#testimonials">
                         Atsauksmes
                     </a>
-                    <a class="nav-item" href="#">
+                    <a class="nav-item" href="#contacts">
                         Kontakti
                     </a>
                 </nav>
@@ -39,7 +42,7 @@
         </div>
     </header>
 
-    <section class="spotlight" id="home">
+    <section class="spotlight" data-scroll-section="true" id="home">
         <div class="container spotlight-inner">
             <div class="spotlight-heading-container">
                 <h2 class="spotlight-heading">
@@ -52,22 +55,22 @@
         </div>
     </section>
 
-    <section class="feature-section" id="features">
+    <section class="feature-section" data-scroll-section="true" id="features">
         <div class="container">
             <h2 class="section-title">Stiklu tonēšana</h2>
             <div class="feature-section-inner">
                 <div class="feature-item animate-hidden" data-animation="fade-in-left-element">
-                    <span class="feature-item-icon">ICON</span>
+                    <span class="feature-item-icon icon-quality icon"></span>
                     <h3 class="feature-item-heading">Kvalitāte</h3>
                     <p class="feature-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi, assumenda, consequuntur cumque fugiat laboriosam laborum nostrum porro possimus quia similique sint temporibus voluptatum. Cumque dolorem iure non repellat voluptatibus?</p>
                 </div>
                 <div class="feature-item animate-hidden" data-animation="fade-in-element">
-                    <span class="feature-item-icon">ICON</span>
+                    <span class="feature-item-icon icon-shield icon"></span>
                     <h3  class="feature-item-heading">Garantija</h3>
                     <p class="feature-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda eius magni molestias repudiandae? Consectetur, cupiditate debitis doloremque esse excepturi hic ipsum molestiae mollitia neque omnis perspiciatis quisquam quos saepe, suscipit?</p>
                 </div>
                 <div class="feature-item animate-hidden" data-animation="fade-in-right-element">
-                    <span class="feature-item-icon">ICON</span>
+                    <span class="feature-item-icon icon-user-experience icon"></span>
                     <h3  class="feature-item-heading">Pieredze</h3>
                     <p class="feature-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias atque autem deleniti doloribus et fuga fugiat id impedit, laboriosam, molestias nihil officia officiis provident quisquam quos reiciendis saepe veritatis voluptates.</p>
                 </div>
@@ -76,7 +79,7 @@
     </section>
 
 
-    <section class="portfolio-section" id="portfolio">
+    <section class="portfolio-section" data-scroll-section="true" id="portfolio">
         <div class="container">
             <h2 class="section-title">Mūsu darbi</h2>
             <div class="slider">
@@ -102,8 +105,37 @@
         </div>
     </section>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <section class="testimonial-section" data-scroll-section="true" id="testimonials">
+        <div class="container">
+            <br>
+            <br>
+            <br>
+            <br>
+            Testimonials Here
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </section>
+
+    <section class="contact-section" data-scroll-section="true" id="contacts">
+        <div class="container">
+            <br>
+            <br>
+            <br>
+            <br>
+            Contacts Here
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="script/jquery.min.js"></script>
+    <script type="text/javascript" src="script/lodash.min.js"></script>
+    <script type="text/javascript" src="script/slick.min.js"></script>
     <script type="text/javascript" src="script/main.js"></script>
 </body>
 

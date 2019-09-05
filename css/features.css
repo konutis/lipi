@@ -7,16 +7,18 @@
 .feature-section-inner {
   display: flex;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .feature-item {
-  padding: 20px;
-  width: 33.333%;
+  padding: 20px 0;
+  width: 100%;
 }
 
 .feature-item-icon {
   display: block;
   margin-bottom: 25px;
+  font-size: 50px;
 }
 
 .feature-item-heading {
@@ -25,4 +27,11 @@
 
 .feature-description {
   line-height: 1.7;
+}
+
+@media screen and (min-width: 768px) {
+  .feature-item {
+    padding: 20px;
+    width: 33.333%;
+  }
 }
